@@ -1,0 +1,22 @@
+# Paper environment, Python 3.12 and CUDA 12.8. Install a matching flash-attn wheel separately.
+vllm==0.11.0
+transformers==4.57.1
+math-verify==0.9.0
+hydra-core==1.3.2
+omegaconf==2.3.0
+ray==2.55.1
+codetiming==1.4.0
+tensordict==0.10.0
+torchdata==0.11.0
+dill==0.4.1
+datasets==4.8.5
+accelerate==1.13.0
+peft==0.19.1
+pylatexenc==2.10
+pyarrow>=19
+numpy<2
+pandas
+pybind11
+wandb
+tensorboard
+verl @ git+https://github.com/pavelslab-nyu/discover-physic-rl.git@3db55b3c7e6a330ca4a2157364c42059c20186d1#subdirectory=verl

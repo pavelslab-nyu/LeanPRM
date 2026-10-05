@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leanprm"
+version = "0.1.0"
+description = "Lean-grounded process supervision for natural-language proof verification"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["datasets>=4,<5", "pyarrow>=18", "numpy>=1.26", "pyyaml>=6"]
+
+[project.optional-dependencies]
+pipeline = ["anthropic>=0.60", "httpx>=0.28", "python-dotenv>=1", "lean-interact>=0.10"]
+
+[tool.setuptools]
+py-modules = ["verifier_task", "solver_task", "external_eval", "format_aligned_external_eval", "imo_gradingbench_eval", "frontier_api_eval", "codex_frontier_eval", "evaluate_in_domain", "convert_prm800k", "prepare_data", "train"]
+packages = ["pipeline"]

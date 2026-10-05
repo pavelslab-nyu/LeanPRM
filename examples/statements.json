@@ -1,0 +1,7 @@
+[
+  {
+    "id": "example_add_zero",
+    "lean_statement": "theorem example_add_zero (n : Nat) : n + 0 = n := by",
+    "category": "Algebra"
+  }
+]
